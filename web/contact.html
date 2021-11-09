@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- IEに対応するための記述。あってもなくてもOKらしい？ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 幅をデバイスに合わせるよって記述 -->
+  <meta name="discription" content="こだわりの空間で特別なひとときを味わえる喫茶店"><!-- 検索ページのリンクの下の説明文 -->
+  <title>喫茶神保 
+| こだわり珈琲の喫茶店</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app/css/style.css"><!-- relは関係性 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet"><!-- topリンク用googleフォント -->
+  <link rel="icon" type="image/png" href="app/images/head/favi.png">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!--  -->
+</head>
+<body>
+  <header id="top" class="page_header">
+    <div class="wrapper">
+      <!-- width800以下でロゴと店名が縦並びにあってしまうので注意 -->
+      <h1>
+        <a class="header_link" href="index.html"><img class="logo-img" src="app/images/logo/logo.png" alt="喫茶神保ホーム">
+          <img class="logo-name" src="app/images/logo/Jinbo's_coffee.jpg" alt="喫茶神保ホーム"></a>
+      </h1>
+      <nav>
+        <ul id="nav-menus">
+          <li class="nav_item"><a href="index.html">HOME</a></li>
+          <li class="nav_item"><a href="menu.html">メニュー</a></li>
+          <li class="nav_item"><a href="info.html">店舗情報</a></li>
+          <li class="nav_item"><a href="recruit.html">採用情報</a></li>
+          <li class="nav_item"><a href="contact.html">お問合せ</a></li>
+        </ul>
+        <div id="nav_btn">
+          <i class="fas fa-bars"></i>
+
+        </div>
+      </nav>
+    </div>
+    <!-- うまく表示できない -->
+    <!-- <div class="business">
+      <p class="business__hours">営業時間 00:00〜00:00</p>
+    </div> -->
+  </header>
+  <div id="sp_menu">
+    <div class="close_btn close">
+      <i class="fas fa-times"></i>
+    </div>
+    <ul id="overlay">
+      <li class="sp_item"><a href="index.html">HOME</a></li>
+      <li class="sp_item"><a href="menu.html">メニュー</a></li>
+      <li class="sp_item"><a href="info.html">店舗情報</a></li>
+      <li class="sp_item"><a href="recruit.html">採用情報</a></li>
+      <li class="sp_item"><a href="contact.html">お問合せ</a></li>
+    </ul>
+  </div>
+  <!-- <div id="home" class="bk-img"></div> -->
+
+  <main>
+    <p class="form_title">お問合せ</p>
+    <div class="form container">
+      <!-- 参考サイト -->
+      <!-- https://www2.skylark.co.jp/inquiry/form.php?contact_type=1 -->
+      <!-- https://www.toridoll.com/contact/form2.php?t=inquiry&agid=4e5df70a9e17026a3697b2cf6ead8481 -->
+      <form id="contact_f" method="POST" action="#">
+
+        <label for="contents">お問合せ種別</label>
+        <select id="contents" name="contents">
+          <option value>お問合せ内容をご選択ください</option>
+          <option value="reserve">ご予約について</option>
+          <option value="inquiry">店舗へのお問合せ</option>
+          <option value="employment">採用情報について</option>
+        </select>
+        
+        <label for="name">お名前<span> 必須</span></label>
+        <input type="text" id="name" name="name" required>
+        
+        <label>ふりがな<span> 必須</span></label>
+        <input type="text" id="furigana" name="furigana" required>
+        
+        <label for="email">メールアドレス<span> 必須</span></label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="tel">電話番号</label>
+        <input type="tel" id="tel" name="tel">
+        
+        <label for="request">内容</label>
+        <textarea id="request" rows="8" placeholder="お問合せ内容・お時間やご来店人数はこちらにご入力ください" name="requesut" required></textarea>
+        
+        <label for="resume">履歴書</label>
+        <input type="file" id="resume" name="resume">
+        <label for="Job_career">職務経歴書</label>
+        <input type="file" id="Job_career" name="Job_career">
+        <!-- <input type="button" value="送信"> -->
+        <button form="contact_f" type="submit">送信する</button>
+      </form>
+    </div>
+    <div class="back_top">
+      <a class="back_link" href="#top">
+        <i class="fas fa-chevron-up"></i>
+        <span>Top</span>
+      </a>
+    </div>
+  </main>
+
+  <footer class="page_footer">
+    <div class="wrapper">
+      <ul class="footer_menus">
+        <li class="footer-item"><a href="menu.html">メニュー</a></li>
+        <li class="footer-item"><a href="info.html">店舗情報</a></li>
+        <li class="footer-item"><a href="recruit.html">採用情報</a></li>
+        
+        <li class="footer-item"><a href="contact.html">お問合せ</a></li>
+      </ul>
+      <div class="footer_sns">
+        <ul>
+          <li class="sns_icon Facebook"><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+          <li class="sns_icon Twitter"><a href="#"><i class="fab fa-twitter"></i> Twiter</a></li>
+          <li class="sns_icon Instagram"><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">Copyrights Jinbo's coffee All Rights Reserved.</p>
+  </footer>
+  <script src="app/js/main.js"></script>
+</body>
+</html>

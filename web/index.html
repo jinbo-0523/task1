@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- IEに対応するための記述。あってもなくてもOKらしい？ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 幅をデバイスに合わせるよって記述 -->
+  <meta name="discription" content="こだわりの空間で特別なひとときを味わえる喫茶店"><!-- 検索ページのリンクの下の説明文 -->
+  <title>喫茶神保 
+| こだわり珈琲の喫茶店</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app/css/style.css"><!-- relは関係性 -->
+  <!-- 端末ごとにCSSを切り替えるための記述 -->
+  <!-- <link rel="stylesheet" href="app/css/desktop.css" media="(min-width: 701px)">　PC版のCSSで分けることもOK-->
+  <!-- <link rel="stylesheet" href="app/css/mobile.css" media="(max-width: 700px)"> 　SP版のCSSで分けることもOK-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet"><!-- topリンク用googleフォント -->
+  <link rel="icon" type="image/png" href="app/images/head/favi.png">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <header id="top" class="page_header">
+    <div class="wrapper">
+      <!-- width800以下でロゴと店名が縦並びにあってしまうので注意 -->
+      <h1>
+        <a class="header_link" href="index.html"><img class="logo-img" src="app/images/logo/logo.png" alt="喫茶神保ホーム">
+          <img class="logo-name" src="app/images/logo/Jinbo's_coffee.jpg" alt="喫茶神保ホーム"></a>
+      </h1>
+      <nav>
+        <ul id="nav-menus">
+          <li class="nav_item"><a href="index.html">HOME</a></li>
+          <li class="nav_item"><a href="menu.html">メニュー</a></li>
+          <li class="nav_item"><a href="info.html">店舗情報</a></li>
+          <li class="nav_item"><a href="recruit.html">採用情報</a></li>
+          <li class="nav_item"><a href="contact.html">お問合せ</a></li>
+        </ul>
+        <div id="nav_btn">
+          <i class="fas fa-bars"></i><!-- id="open" -->
+        </div>
+      </nav>
+    </div>
+    
+    <!-- うまく表示できない -->
+    <!-- <div class="business">
+      <p class="business__hours">営業時間 00:00〜00:00</p>
+    </div> -->
+  </header>
+    
+    <div id="sp_menu">
+      <div class="close_btn close">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul id="overlay">
+        <li class="sp_item"><a href="index.html">HOME</a></li>
+        <li class="sp_item"><a href="menu.html">メニュー</a></li>
+        <li class="sp_item"><a href="info.html">店舗情報</a></li>
+        <li class="sp_item"><a href="recruit.html">採用情報</a></li>
+        <li class="sp_item"><a href="contact.html">お問合せ</a></li>
+      </ul>
+    </div>
+
+  <div id="home" class="bk-img"></div>
+
+  <main>
+    <div class="concept">
+      <div class="concept_title"><!-- (短文で文字大きめに) -->
+        <p>
+          <!-- - コンセプト概要コンセプト概要 - -->
+          - 日常に『非日常の贅沢』を -
+      </p>
+      </div>
+      <div class="concept_text">
+        <p><!-- 文字小さめ字体変更(？) -->
+          こだわりの香り高いの珈琲や季節の食材を使ったお料理・美しい丁度品。
+          <br>
+          日常の中ではなかなか味わえない空間をご用意しました。
+          <br>
+          日常を忘れ、大切な人や自分へのご褒美にぜひお寛ぎください。
+          <!-- <p>コンセプト説明文コンセプト説明文コンセプト説明文コンセプト説明文コンセプト説明文</p>
+          <p>コンセプト説明文コンセプト説明文コンセプト説明文コンセプト説明文コンセプト説明文</p>
+          <p>コンセプト説明文コンセプト説明文コンセプト説明文コンセプト説明文コンセプト説明文</p> -->
+        </p>
+      </div>
+    </div>
+
+    <div class="flex">
+      <p class="sp_title">Menu</p>
+      <div class="img_box">
+        <img src="app/images/top/top-coffee.jpg" class="under_img" alt="メニー画像">
+        <img src="app/images/menu/cake.jpg" class="over_img" alt="メニー画像">
+      </div>
+      <div class="flex_item">
+        <p class="pc_title">Menu</p>
+        <p class="page_text">こだわりの豆を使用した珈琲</p>
+        <p class="page_text">旬の食材や素材を生かした料理</p>
+        <a href="menu.html" class="link_arrow">More</a>
+      </div>
+    </div>
+
+    <div class="shop reverse">
+      <p class="sp_title">Access</p>
+      <div class="img_box">
+        <img src="app/images/top/inside-of-shop.jpg" class="#" alt="店舗画像">
+      </div>
+      <div class="flex_item">
+        <p class="pc_title">Access</p>
+        <p class="page_text">アクセスの良いOOO駅から徒歩約00分</p>
+        <p class="page_text">近くのOOOが目印になります</p>
+        <a href="info.html" class="link_arrow">More</a>
+      </div>
+    </div>
+
+    <div class="staff flex">
+      <p class="sp_title">Recruit</p>
+      <div class="img_box">
+        <img src="app/images/top/staff.jpg" class="#" alt="従業員画像">
+      </div>
+      <div class="flex_item">
+        <p class="pc_title">Recruit</p>
+        <p class="page_text">スタッフはお店の良きパートナー</p>
+        <p class="page_text">スタッフとお客様とで良いお店を作っていきたいと思っています</p>
+        <p class="page_text">私たちと一緒にお店を作って行きませんか？</p>
+        <a href="recruit.html" class="link_arrow">More</a>
+      </div>
+    </div>
+    <!-- <div class="staff flex">
+      <div>
+        <img src="app/images/top/staff.jpg" class="#" alt="従業員画像">
+      </div>
+      <div>
+        <p class="page_text">『概要』</p>
+        <div class="link_arrow">OOOページへ</div>
+      </div>
+    </div> -->
+
+    <!-- <div class="staff">
+      <div>
+        <img src="app/images/top/staff.jpg" class="#" alt="従業員画像">
+        <p class="staff-text">『スタッフ募集についての概要テキスト』</p>
+        <div class="link_arrow"></div>
+      </div>
+    </div> -->
+    <div class="back_top"><a href="#top"><i class="fas fa-chevron-up"></i><span>Top</span></a>
+    </div>
+  </main>
+
+  <footer class="page_footer">
+    <div class="wrapper">
+      <ul class="footer_menus">
+        <li class="footer-item"><a href="menu.html">メニュー</a></li>
+        <li class="footer-item"><a href="info.html">店舗情報</a></li>
+        <li class="footer-item"><a href="recruit.html">採用情報</a></li>
+        
+        <li class="footer-item"><a href="contact.html">お問合せ</a></li>
+      </ul>
+      <div class="footer_sns">
+        <ul>
+          <li class="sns_icon Facebook">
+            <a href="#">
+              <i class="fab fa-facebook-square"></i> Facebook
+            </a>
+          </li>
+          <li class="sns_icon Twitter">
+            <a href="#">
+              <i class="fab fa-twitter"></i> Twiter
+            </a>
+          </li>
+          <li class="sns_icon Instagram">
+            <a href="#"><i class="fab fa-instagram"></i> Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">Copyrights Jinbo's coffee All Rights Reserved.</p>
+  </footer>
+  <script src="app/js/main.js"></script>
+</body>
+</html>

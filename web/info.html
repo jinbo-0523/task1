@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- IEに対応するための記述。あってもなくてもOKらしい？ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 幅をデバイスに合わせるよって記述 -->
+  <meta name="discription" content="こだわりの空間で特別なひとときを味わえる喫茶店"><!-- 検索ページのリンクの下の説明文 -->
+  <title>喫茶神保 
+| こだわり珈琲の喫茶店</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app/css/style.css"><!-- relは関係性 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet"><!-- topリンク用googleフォント -->
+  <link rel="icon" type="image/png" href="app/images/head/favi.png">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!--  -->
+</head>
+<body>
+  <header id="top" class="page_header">
+    <div class="wrapper">
+      <!-- width800以下でロゴと店名が縦並びにあってしまうので注意 -->
+      <h1>
+        <a class="header_link" href="index.html"><img class="logo-img" src="app/images/logo/logo.png" alt="喫茶神保ホーム">
+          <img class="logo-name" src="app/images/logo/Jinbo's_coffee.jpg" alt="喫茶神保ホーム"></a>
+      </h1>
+      <nav>
+        <ul id="nav-menus">
+          <li class="nav_item"><a href="index.html">HOME</a></li>
+          <li class="nav_item"><a href="menu.html">メニュー</a></li>
+          <li class="nav_item"><a href="info.html">店舗情報</a></li>
+          <li class="nav_item"><a href="recruit.html">採用情報</a></li>
+          <li class="nav_item"><a href="contact.html">お問合せ</a></li>
+        </ul>
+        <div id="nav_btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+    <!-- うまく表示できない -->
+    <!-- <div class="business">
+      <p class="business__hours">営業時間 00:00〜00:00</p>
+    </div> -->
+  </header>
+
+  <div id="sp_menu">
+    <div class="close_btn close">
+      <i class="fas fa-times"></i>
+    </div>
+    <ul id="overlay">
+      <li class="sp_item"><a href="index.html">HOME</a></li>
+      <li class="sp_item"><a href="menu.html">メニュー</a></li>
+      <li class="sp_item"><a href="info.html">店舗情報</a></li>
+      <li class="sp_item"><a href="recruit.html">採用情報</a></li>
+      <li class="sp_item"><a href="contact.html">お問合せ</a></li>
+    </ul>
+  </div>
+  <!-- <div id="home" class="bk-img"></div> -->
+
+  <main>
+    <div class="map_box">
+      <iframe class="store_map" width="" height="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12966.991949849009!2d139.73669958532793!3d35.65858018474208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1633585750211!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
+    <div class="info_wrapper">
+      <table>
+        <tbody class="info_items">
+          <tr class="info_item">
+            <th class="title">営業時間</th>
+            <td class="text">8:00~21:00</td>
+          </tr>
+          <tr class="info_item">
+            <th class="title">定休日</th>
+            <td class="text">祝日</td>
+          </tr>
+          <tr class="info_item">
+            <th class="title">住所</th>
+            <td class="text">東京都港区芝公園４丁目２−８</td>
+          </tr>
+          <tr class="info_item">
+            <th class="title">Tel</th>
+            <td class="text">03-3433-5111</td>
+          </tr>
+          <tr class="info_item">
+            <th class="title">アクセス</th>
+            <td class="text">大江戸線	赤羽橋駅 / 赤羽橋口	徒歩5分</td>
+          </tr>
+          <tr class="info_item">
+            <th class="title"></th>
+            <td class="text text_link">ご予約は<a href="contact.html" class="text">こちら</a>から</td>
+            <!-- <a href="contact.html"  class="title"> -->
+              <!-- ご予約はこちらから -->
+            <!-- </a> -->
+          </tr>
+        </tbody>
+      </table>
+      <img src="app/images/info/outside-of-shop.jpg" class="outside" alt="店舗画像">
+    </div>
+    <!-- :hoverさせるとaもiも色がかわてしまう -->
+    <div class="back_top">
+      <a class="back_link" href="#top">
+        <i class="fas fa-chevron-up"></i>
+        <span>Top</span>
+      </a>
+    </div>
+  </main>
+
+
+  <footer class="page_footer">
+    <div class="wrapper">
+      <ul class="footer_menus">
+        <li class="footer-item"><a href="menu.html">メニュー</a></li>
+        <li class="footer-item"><a href="info.html">店舗情報</a></li>
+        <li class="footer-item"><a href="recruit.html">採用情報</a></li>
+        
+        <li class="footer-item"><a href="contact.html">お問合せ</a></li>
+      </ul>
+      <div class="footer_sns">
+        <ul>
+          <li class="sns_icon Facebook"><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+          <li class="sns_icon Twitter"><a href="#"><i class="fab fa-twitter"></i> Twiter</a></li>
+          <li class="sns_icon Instagram"><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">Copyrights Jinbo's coffee All Rights Reserved.</p>
+  </footer>
+  <script src="app/js/main.js"></script>
+</body>
+</html>
